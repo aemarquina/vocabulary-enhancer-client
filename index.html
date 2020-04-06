@@ -12,6 +12,62 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1 class="jumbotron text-center">Wordly</h1>
+      <p id='authenticationMessages'></p>
+      <div class='sign-in-page'>
+      <form id="sign-up" class="text-center">
+        <fieldset class="signUp">
+          <legend>Sign Up!</legend>
+          <input class='signUpText form-control-lg' type="text" name="credentials[email]"
+          placeholder="Email">
+          <input class='signUpText form-control-lg' type='password' name="credentials[password]" placeholder="Password">
+          <input class='signUpText form-control-lg' type="password" name="credentials[password_confirmation]" 
+          placeholder="Confirm password"> <br></br>
+          <input class='signUpButton' type= Submit value="Sign up!">
+        </fieldset>
+      </form>
+      <form id="sign-in" class="text-center">
+        <fieldset class="signIn">
+          <legend>Sign In!</legend>
+          <input class='signInText form-control-lg' type="text" name="credentials[email]"
+          placeholder="Email">
+          <input class='signInText form-control-lg' type='password' name="credentials[password]" placeholder="Password"> <br></br>
+          <input class='signInButton form-control-lg' type= Submit value="Sign in!">
+        </fieldset>
+      </form>
+      </div>
+  
+      <p id='wordMessages'></p>
+      <div class="main-page" style="display:none">
+      <button id="addWordForm" class="btn btn-dark">Add A Word</button>
+      <button id="getWordsButton">Get All Words!</button>
+      <button class='changePasswordButton'>Change Password!</button>
+      <form id="change-password" class="text-center">
+        <fieldset class="changePassword" style="display:none">
+              <legend>Change Password!</legend>
+              <div class="changePasswordShow">
+              <input class='changePasswordText form-control-lg' type='password' name="passwords[old]" placeholder="Password">
+              <input class='changePasswordText form-control-lg' type="password" name="passwords[new]" 
+              placeholder="New password"> <br></br>
+              <input type= Submit value="Change Password!">
+              </div>
+        </fieldset>
+      </form>
+
+     <form id="sign-out" class="text-center">
+      <fieldset class="signOut">
+        <legend>Sign out!</legend>
+        <input type= Submit value="Sign Out!">
+      </fieldset>
+    </form>
+      </div>
+
+      <main>
+        <div id="wordList" class="wordList"></div>
+        <div id="updateWord" class="updateWord"></div>
+        <div id="addWord" class="addWord">
+        </div>
+      </main>
+    </div>
     </body>
 </html>

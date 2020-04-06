@@ -1,0 +1,10 @@
+<form  data-id="{{word.id}}" id="updateWord">
+        <fieldset>
+          <h3>Update a Word!</h3>
+            <input placeholder="Word" name="word[name]" id="name" type="text" value="{{word.name}}">
+            <input placeholder="Definition" name="word[definition]" id="definition"  type="text" value="{{word.definition}}">
+            <input placeholder="Part of Speech" name="word[parts_of_speech]" id="parts_of_speech" type="text" value="{{word.parts_of_speech}}">
+            <input placeholder="Sample sentence" name="word[sample_sentence]" id="sample_sentence" type="text" value="{{word.sample_sentence}}">
+            <input class="btn btn-info updateWordButton" type="Submit" value="Update Word">
+        </fieldset>
+</form>

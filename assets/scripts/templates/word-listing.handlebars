@@ -1,0 +1,19 @@
+{{#each words as |word|}}
+  {{log word}}
+  <section data-id="{{word.id}}">
+    <h3>
+      {{word.name}}
+    </h3>
+    <p>
+    <h6>Definition:</h6>
+      {{word.definition}}
+    <h6>Part of Speech:</h6>
+      {{word.parts_of_speech}}
+    <h6>Sentence:</h6>
+      {{word.sample_sentence}}
+    </p>
+    <button data-id="{{word.id}}" class="btn btn-danger removeWordButton">Remove Word!</button> 
+    <button data-id="{{word.id}}" class="btn btn-info updateWordFormButton">Update Word!</button>
+  </section>
+
+{{/each}}
