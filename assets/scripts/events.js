@@ -129,8 +129,8 @@ const addHandlers = () => {
   $('#getWordsButton').on('click', onShowWords)
   $('.addWord').on('submit', '#addAWord', onAddWord)
   $('.wordList').on('click', '.removeWordButton', onRemoveWord)
-  $('.updateWord').on('submit', '#updateWord', onUpdateWord)
-  $('.updateWord').on('click', '.updateWordFormButton', onUpdateWordForm)
+  $('.wordList').on('submit', '#updateWord', onUpdateWord)
+  $('.wordList').on('click', '.updateWordFormButton', onUpdateWordForm)
 }
 
 module.exports = {

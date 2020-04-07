@@ -61,6 +61,7 @@ const addWordFormSuccess = function () {
 const addWordSuccess = function (data) {
   console.log('Added word')
   $('#wordMessages').text('You added a word 🥳')
+  $('.addWordText').val('')
 }
 
 const addWordFailure = function (data) {
@@ -90,6 +91,7 @@ const updateWordFormSuccess = function (data) {
 const updateWordSuccess = function (id, data) {
   console.log(data + id)
   $('#wordMessages').text('You updated a word 🥳')
+  $('.updateWordText').val('')
 }
 const removeWordSuccess = function () {
   console.log('Can Remove Word')

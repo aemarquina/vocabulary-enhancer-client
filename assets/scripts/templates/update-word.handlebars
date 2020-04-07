@@ -1,10 +1,14 @@
-<form  data-id="{{word.id}}" id="updateWord">
+<form  data-id="{{word.id}}" class='text-center w-50 p-3' id="updateWord">
         <fieldset>
           <h3>Update a Word!</h3>
-            <input placeholder="Word" name="word[name]" id="name" type="text" value="{{word.name}}">
-            <input placeholder="Definition" name="word[definition]" id="definition"  type="text" value="{{word.definition}}">
-            <input placeholder="Part of Speech" name="word[parts_of_speech]" id="parts_of_speech" type="text" value="{{word.parts_of_speech}}">
-            <input placeholder="Sample sentence" name="word[sample_sentence]" id="sample_sentence" type="text" value="{{word.sample_sentence}}">
+            <label for="wordName" class="h5">Name</label>
+            <input class="updateWordText form-control form-control-lg" placeholder="Word" name="word[name]" id="name" type="text" value="{{word.name}}">
+            <text for="definition" class="h5" >Definition</label>
+            <textarea class="updateWordText form-control form-control-lg" placeholder="Definition" name="word[definition]" id="definition"  type="text">{{word.definition}}</textarea>
+            <label for="partOfSpeech" class="h5">Part of Speech</label>
+            <input class="updateWordText form-control form-control-lg" placeholder="Part of Speech" name="word[parts_of_speech]" id="parts_of_speech" type="text" value="{{word.parts_of_speech}}">
+            <label for="sampleSentence" class="h5">Sample Sentence</label>
+            <textarea class="updateWordText form-control form-control-lg" placeholder="Sample sentence" name="word[sample_sentence]" id="sample_sentence" type="text">{{word.sample_sentence}}</textarea>
             <input class="btn btn-info updateWordButton" type="Submit" value="Update Word">
         </fieldset>
 </form>

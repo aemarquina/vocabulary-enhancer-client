@@ -3,3 +3,54 @@
 #addAWord {
   margin: auto
 }
+header {
+  background-color: rgba(65, 62, 62, 0.418);
+}
+
+h1 {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 200px;
+  color: white;
+  -webkit-text-stroke-width: 10px;
+  -webkit-text-stroke-color: rgba(241, 234, 234, 0.781);
+}
+
+body {
+  background-image: url(https://i.imgur.com/XyZhKXA.jpg?1);
+  background-size: cover;
+}
+
+#listOfWords {
+  display: inline-block;
+  border-style: solid;
+  border-color: red;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+
+}
+
+#wordList {
+  margin: auto;
+  align-content: center;
+  text-align: center;
+}
+
+#updateWord {
+  margin: auto;
+}
+
+.buttonSection {
+  margin: auto;
+  text-align: center;
+}
+
+.messages {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+// princess bride gif https://giphy.com/gifs/N7FeGLHjVsDQY/html5
+// dead poet society a man is not tired https://giphy.com/gifs/3HXqGylfS67T2/html5
+// dead poet society words and ideas change the world https://giphy.com/gifs/QwjewC1mrm7mg/html5

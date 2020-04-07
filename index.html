@@ -6,26 +6,30 @@
 
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
+      <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1 class="jumbotron text-center">Wordly</h1>
-      <p id='authenticationMessages'></p>
+      <header>
+      <h1 class="text-center">Word-ly</h1>
+
+      </header>
       <div class='sign-in-page'>
+        <b-dropdown id="dropdown-1" text="Dropdown Button" class="m-md-2">
       <form id="sign-up" class="text-center">
         <fieldset class="signUp">
           <legend>Sign Up!</legend>
-          <input class='signUpText form-control-lg' type="text" name="credentials[email]"
-          placeholder="Email">
+          <b-dropdown-input class='signUpText form-control-lg' type="text" name="credentials[email]"
+          placeholder="Email"></b-dropdown-input>
           <input class='signUpText form-control-lg' type='password' name="credentials[password]" placeholder="Password">
           <input class='signUpText form-control-lg' type="password" name="credentials[password_confirmation]" 
           placeholder="Confirm password"> <br></br>
-          <input class='signUpButton' type= Submit value="Sign up!">
+          <input class='signUpButton form-control-lg' type= Submit value="Sign up!">
         </fieldset>
       </form>
+    </div>
       <form id="sign-in" class="text-center">
         <fieldset class="signIn">
           <legend>Sign In!</legend>
@@ -37,11 +41,13 @@
       </form>
       </div>
   
-      <p id='wordMessages'></p>
+      <p class='messages' id='wordMessages'></p>
       <div class="main-page" style="display:none">
+      <div class="buttonSection">
       <button id="addWordForm" class="btn btn-dark">Add A Word</button>
       <button id="getWordsButton">Get All Words!</button>
       <button class='changePasswordButton'>Change Password!</button>
+    </div>
       <form id="change-password" class="text-center">
         <fieldset class="changePassword" style="display:none">
               <legend>Change Password!</legend>
@@ -54,6 +60,13 @@
         </fieldset>
       </form>
 
+        <main>
+          <div id="wordList" class="wordList"></div>
+          <div id="updateWord" class="updateWord "></div>
+          <div id="addWord" class="addWord">
+          </div>
+        </main>
+
      <form id="sign-out" class="text-center">
       <fieldset class="signOut">
         <legend>Sign out!</legend>
@@ -61,13 +74,6 @@
       </fieldset>
     </form>
       </div>
-
-      <main>
-        <div id="wordList" class="wordList"></div>
-        <div id="updateWord" class="updateWord"></div>
-        <div id="addWord" class="addWord">
-        </div>
-      </main>
     </div>
     </body>
 </html>
