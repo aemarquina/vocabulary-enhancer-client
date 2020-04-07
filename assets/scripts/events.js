@@ -3,7 +3,6 @@ const api = require('./api')
 const ui = require('./ui')
 
 const onSignUp = function (event) {
-  $('.signUpText').val('')
   event.preventDefault()
   console.log('Signing up')
   const data = getFormFields(event.target)

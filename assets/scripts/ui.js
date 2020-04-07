@@ -5,7 +5,6 @@ const updateWordTemplate = require('./templates/update-word.handlebars')
 
 const signUpSuccess = function (data) {
   $('#authenticationMessages').text('You have successfully signed up❕')
-  $('.signUpText').val('')
 }
 
 const signUpFailure = function (error) {
