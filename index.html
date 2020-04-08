@@ -13,9 +13,10 @@
     </head>
     <body>
       <header>
-      <h1 class="text-center">Word-ly</h1>
+      <h1 class="text-center">Wordly</h1>
 
       </header>
+      <p class='messages' id="authenticationMessages"></p>
       <div class='sign-in-page'>
       <form id="sign-up" class="text-center">
         <fieldset class="signUp">
@@ -42,21 +43,26 @@
       <p class='messages' id='wordMessages'></p>
       <div class="main-page" style="display:none">
       <div class="buttonSection">
-      <button id="addWordForm" class="btn btn-dark">Add A Word</button>
-      <button id="getWordsButton">Get All Words!</button>
-      <button class='changePasswordButton'>Change Password!</button>
+      <button id="addWordForm" class="form-control-lg">Add A Word</button>
+      <button class="form-control-lg"id="getWordsButton">Get All Words!</button>
+      <button class='changePasswordButton form-control-lg'>Change Password!</button>
     </div>
       <form id="change-password" class="text-center">
         <fieldset class="changePassword" style="display:none">
+            <div class="changePasswordShow">
               <legend>Change Password!</legend>
-              <div class="changePasswordShow">
               <input class='changePasswordText form-control-lg' type='password' name="passwords[old]" placeholder="Password">
               <input class='changePasswordText form-control-lg' type="password" name="passwords[new]" 
               placeholder="New password"> <br></br>
-              <input type= Submit value="Change Password!">
+              <input class="form-control-lg" type= Submit value="Change Password!">
               </div>
         </fieldset>
       </form>
+      <form id="sign-out" class="text-center">
+          <fieldset class="signOut">
+            <input class="form-control-lg"type= Submit value="Sign Out!">
+          </fieldset>
+        </form>
 
         <main>
           <div id="wordList" class="wordList"></div>
@@ -65,12 +71,6 @@
           </div>
         </main>
 
-     <form id="sign-out" class="text-center">
-      <fieldset class="signOut">
-        <legend>Sign out!</legend>
-        <input type= Submit value="Sign Out!">
-      </fieldset>
-    </form>
       </div>
     </div>
     </body>

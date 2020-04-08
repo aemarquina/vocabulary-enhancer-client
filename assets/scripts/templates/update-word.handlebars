@@ -1,14 +1,14 @@
 <form  data-id="{{word.id}}" class='text-center w-50 p-3' id="updateWord">
         <fieldset>
-          <h3>Update a Word!</h3>
-            <label for="wordName" class="h5">Name</label>
+          <legend>Update a Word!</legend>
+            <label for="wordName" class="subText">Name</label>
             <input class="updateWordText form-control form-control-lg" placeholder="Word" name="word[name]" id="name" type="text" value="{{word.name}}">
-            <text for="definition" class="h5" >Definition</label>
+            <text for="definition" class="subText" >Definition</label>
             <textarea class="updateWordText form-control form-control-lg" placeholder="Definition" name="word[definition]" id="definition"  type="text">{{word.definition}}</textarea>
-            <label for="partOfSpeech" class="h5">Part of Speech</label>
+            <label for="partOfSpeech" class="subText">Part of Speech</label>
             <input class="updateWordText form-control form-control-lg" placeholder="Part of Speech" name="word[parts_of_speech]" id="parts_of_speech" type="text" value="{{word.parts_of_speech}}">
-            <label for="sampleSentence" class="h5">Sample Sentence</label>
+            <label for="sampleSentence" class="subText">Sample Sentence</label>
             <textarea class="updateWordText form-control form-control-lg" placeholder="Sample sentence" name="word[sample_sentence]" id="sample_sentence" type="text">{{word.sample_sentence}}</textarea>
-            <input class="btn btn-info updateWordButton" type="Submit" value="Update Word">
+            <input class="form-control-lg updateWordButton" type="Submit" value="Update Word">
         </fieldset>
 </form>

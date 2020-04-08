@@ -3,8 +3,31 @@
 #addAWord {
   margin: auto
 }
+
 header {
   background-color: rgba(65, 62, 62, 0.418);
+}
+.sign-in-page {
+  padding: 0px 200px;
+}
+
+.signOut {
+  padding: 0px 200px;
+}
+
+.changePasswordShow {
+  padding: 0px 200px;
+}
+
+legend {
+  background-color: rgba(31, 27, 27, 0.568);
+  font-family: 'Londrina Outline', cursive;
+  font-size: 50px;
+  color: white;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: rgba(241, 234, 234, 0.781);
+  margin: 10px;
+  padding: 0px 150px;
 }
 
 h1 {
@@ -15,6 +38,37 @@ h1 {
   -webkit-text-stroke-color: rgba(241, 234, 234, 0.781);
 }
 
+h3 {
+  font-size: 35px;
+}
+
+.subText {
+  color: white;
+  font-size: 35px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(14, 13, 13, 0.973);
+}
+
+h6  {
+  font-size: 20px;
+}
+
+#listOfWords {
+  color: white;
+}
+
+.messages {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(241, 234, 234, 0.781);
+  background-color: rgba(31, 27, 27, 0.568);
+  padding: 0px 200px;
+  margin: auto;
+  text-align: center;
+}
+
 body {
   background-image: url(https://i.imgur.com/XyZhKXA.jpg?1);
   background-size: cover;
@@ -23,11 +77,19 @@ body {
 #listOfWords {
   display: inline-block;
   border-style: solid;
-  border-color: red;
+  border-color: white;
   margin: 10px;
   padding: 5px;
   text-align: center;
+  background-color: rgba(31, 27, 27, 0.568);
+}
 
+.form-control-lg {
+  margin: 10px;
+}
+
+img {
+  padding: 10px;
 }
 
 #wordList {
@@ -38,6 +100,12 @@ body {
 
 #updateWord {
   margin: auto;
+  padding: 0px 200px;
+}
+
+.updateWordButton {
+  color: black;
+  -webkit-text-stroke-width: 0px;
 }
 
 .buttonSection {
@@ -45,11 +113,13 @@ body {
   text-align: center;
 }
 
-.messages {
-  margin: auto;
-  text-align: center;
-  padding: 10px;
+.form-control {
+  color: gray;
+  -webkit-text-stroke-width: 0px;
+
 }
+
+
 
 // princess bride gif https://giphy.com/gifs/N7FeGLHjVsDQY/html5
 // dead poet society a man is not tired https://giphy.com/gifs/3HXqGylfS67T2/html5
