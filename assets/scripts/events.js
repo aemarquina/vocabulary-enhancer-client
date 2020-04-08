@@ -4,7 +4,6 @@ const ui = require('./ui')
 
 const onSignUp = function (event) {
   event.preventDefault()
-  console.log('Signing up')
   const data = getFormFields(event.target)
   api.signUp(data)
     .then(ui.signUpSuccess)
@@ -13,7 +12,6 @@ const onSignUp = function (event) {
 
 const onSignIn = function (event) {
   event.preventDefault()
-  console.log('Signed in')
   const data = getFormFields(event.target)
   api.signIn(data)
     .then(ui.signInSuccess)
@@ -26,7 +24,6 @@ const onSignOut = function (event) {
   $('#wordList').hide()
   $('#addWord').hide()
   event.preventDefault()
-  console.log('Signed Out!')
   api.signOut()
     .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
@@ -36,7 +33,6 @@ const onChangePassword = function (event) {
   $('#authenticationMessages').show()
   $('#wordMessages').hide()
   event.preventDefault()
-  console.log('Changed password!')
   const data = getFormFields(event.target)
   api.changePassword(data)
     .then(ui.changePasswordSuccess)
@@ -100,19 +96,15 @@ const onUpdateWordForm = function (event) {
   api.updateWordForm(id)
     .then(ui.updateWordFormSuccess)
     .catch(ui.updateWordFormFailure)
-  console.log(id)
 }
 
 const onUpdateWord = function (event) {
   event.preventDefault()
   const id = $(event.target).data('id')
-  console.log(event.target)
   const data = getFormFields(event.target)
   api.updateWord(data, id)
     .then(ui.updateWordSuccess)
     .catch(ui.updateWordFailure)
-  console.log('You are in events' + data + id)
-}
 
 // function formHack (form) {
 //   return {
