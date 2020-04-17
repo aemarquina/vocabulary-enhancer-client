@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Wordly</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <header>
+      <h1 class="text-center">Wordly</h1>
+
+      </header>
+      <p class='messages' id="authenticationMessages"></p>
+      <div class='sign-in-page'>
+      <form id="sign-up" class="text-center">
+        <fieldset class="signUp">
+          <legend>Sign Up!</legend>
+          <input type="text" class='signUpText form-control-lg' type="text" name="credentials[email]"
+          placeholder="Email">
+          <input class='signUpText form-control-lg' type='password' name="credentials[password]" placeholder="Password">
+          <input class='signUpText form-control-lg' type="password" name="credentials[password_confirmation]" 
+          placeholder="Confirm password"> <br></br>
+          <input class='signUpButton form-control-lg' type= Submit value="Sign up!">
+        </fieldset>
+      </form>
+      <form id="sign-in" class="text-center">
+        <fieldset class="signIn">
+          <legend>Sign In!</legend>
+          <input class='signInText form-control-lg' type="text" name="credentials[email]"
+          placeholder="Email">
+          <input class='signInText form-control-lg' type='password' name="credentials[password]" placeholder="Password"> <br></br>
+          <input class='signInButton form-control-lg' type= Submit value="Sign in!">
+        </fieldset>
+      </form>
+      </div>
+  
+      <p class='messages' id='wordMessages'></p>
+      <div class="main-page" style="display:none">
+      <div class="buttonSection">
+      <button id="addWordForm" class="form-control-lg">Add A Word</button>
+      <button class="form-control-lg"id="getWordsButton">Get All Words!</button>
+      <button class='changePasswordButton form-control-lg'>Change Password!</button>
+    </div>
+      <form id="change-password" class="text-center">
+        <fieldset class="changePassword" style="display:none">
+            <div class="changePasswordShow">
+              <legend>Change Password!</legend>
+              <input class='changePasswordText form-control-lg' type='password' name="passwords[old]" placeholder="Password">
+              <input class='changePasswordText form-control-lg' type="password" name="passwords[new]" 
+              placeholder="New password"> <br></br>
+              <input class="form-control-lg" type= Submit value="Change Password!">
+              </div>
+        </fieldset>
+      </form>
+      <form id="sign-out" class="text-center">
+          <fieldset class="signOut">
+            <input class="form-control-lg"type= Submit value="Sign Out!">
+          </fieldset>
+        </form>
+
+        <main>
+          <div id="wordList" class="wordList"></div>
+          <div id="updateWord" class="updateWord "></div>
+          <div id="addWord" class="addWord">
+          </div>
+        </main>
+
+      </div>
+    </div>
+    </body>
+</html>
