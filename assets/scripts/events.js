@@ -105,7 +105,7 @@ const onUpdateWord = function (event) {
   api.updateWord(data, id)
     .then(ui.updateWordSuccess)
     .catch(ui.updateWordFailure)
-
+}
 // function formHack (form) {
 //   return {
 //     word: {
